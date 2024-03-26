@@ -8,8 +8,8 @@
 appearance:
   theme_day: minimal
   theme_night: dark
-  font: ""
-  font_size: M
+  font: minimal
+  font_size: m
 
 # SEO
 marketing:
@@ -37,7 +37,6 @@ header:
     show_language: false
     show_day_night: true
     show_search: true
-    theme_day: dark
     highlight_active_link: false
 
 # Site footer
