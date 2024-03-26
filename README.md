@@ -1,48 +1,44 @@
-# [Hugo Research Group Theme](https://github.com/wowchemy/starter-hugo-research-group)
+# Turbulence Energy Systems Laboratory (TESLa) Website
 
-[![Screenshot](./preview.png)](https://hugoblox.com/hugo-themes/)
+Welcome to the source code of the  [TESLa website](https://teslacu.org) powered by the [Hugo](https://gohugo.io) [Academic](https://sourcethemes.com/academic/).
 
-The **Research Group Template** empowers your research group to easily create a beautiful website with a stunning homepage, news, academic publications, events, team profiles, and a contact form.
+## Quickstart
+Running this website locally requires `hugo` to be [installed](https://gohugo.io/getting-started/installing/#quick-install) on your machine. The website requires a minimum version so we recommend
+```
+brew install hugo
+```
+on macOS or
+```
+wget https://github.com/gohugoio/hugo/releases/download/v0.58.2/hugo_0.58.2_Linux-64bit.deb
+dpkg -i hugo_0.58.2_Linux-64bit.deb
+```
+on Ubuntu since standard `sudo apt-get` installs a depreciated version.
 
-️**Trusted by 250,000+ researchers, educators, and students.** Highly customizable via the integrated **no-code, widget-based Wowchemy page builder**, making every site truly personalized ⭐⭐⭐⭐⭐
+Once `git` and `hugo` are installed, create a fork from [our repository](https://github.com/tesla-cu/website). This will create an exact copy under your username. Then perform: 
+```bash
+$ git clone --recursive https://github.com/[username]/website.git
+$ cd website
+$ hugo server
+```
+where you should replace `[username]` with your username. Open [http://localhost:1313/](http://localhost:1313/) and your personal build of the website should appear. Once you are satisfied with your updates, submit a pull request where other members of the lab can inspect and merge your new content. Check [Configuring your Github account](https://github.com/tesla-cu/website/wiki/Configuring-your-Github-account) wiki page to help you with this procedure.
 
-[![Get Started](https://img.shields.io/badge/-Get%20started-ff4655?style=for-the-badge)](https://hugoblox.com/hugo-themes/)
-[![Discord](https://img.shields.io/discord/722225264733716590?style=for-the-badge)](https://discord.com/channels/722225264733716590/742892432458252370/742895548159492138)  
-[![Twitter Follow](https://img.shields.io/twitter/follow/GetResearchDev?label=Follow%20on%20Twitter)](https://twitter.com/wowchemy)
+If you would like to add a new content additional enrichment or help to improve the website design, check out our [Adding new content](https://github.com/tesla-cu/website/wiki/Adding-new-content) and [Modifying the website format](https://github.com/tesla-cu/website/wiki/odifying-the-website-format) pages on the wiki! See [Hugo Academic docs](https://sourcethemes.com/academic/docs/) for a thorough description of all functionality.
 
-Easily write technical content with plain text Markdown, LaTeX math, diagrams, RMarkdown, or Jupyter, and import publications from BibTeX.
+## Quick File Location Reference
+Personal information and profile pictures are located under
+```
+content/authors/firstname_lastname
+```
+You can upload your CV to
+```
+static/files/authors_cv/firstname_lastname_cv.pdf
+```
+and can add it to `_index.md` under your personal information as
+```
+- icon: cv
+  icon_pack: ai
+  link: files/authors_cv/firstname_lastname_cv.pdf
+```
 
-[Check out the latest demo](https://research-group.netlify.app/) of what you'll get in less than 60 seconds, or [view the showcase](https://hugoblox.com/creators/).
-
-The integrated [**Wowchemy**](https://hugoblox.com) website builder and CMS makes it easy to create a beautiful website for free. Edit your site in the CMS (or your favorite editor), generate it with [Hugo](https://github.com/gohugoio/hugo), and deploy with GitHub or Netlify. Customize anything on your site with widgets, light/dark themes, and language packs.
-
-- 👉 [**Get Started**](https://hugoblox.com/hugo-themes/)
-- 📚 [View the **documentation**](https://docs.hugoblox.com/)
-- 💬 [Chat with the **Wowchemy research community**](https://discord.gg/z8wNYzb) or [**Hugo community**](https://discourse.gohugo.io)
-- ⬇️ **Automatically import citations from BibTeX** with the [Hugo Academic CLI](https://github.com/GetRD/academic-file-converter)
-- 🐦 Share your new site with the community: [@wowchemy](https://twitter.com/wowchemy) [@GeorgeCushen](https://twitter.com/GeorgeCushen) [#MadeWithWowchemy](https://twitter.com/search?q=%23MadeWithWowchemy&src=typed_query)
-- 🗳 [Take the survey and help us improve #OpenSource](https://forms.gle/NioD9VhUg7PNmdCAA)
-- 🚀 [Contribute improvements](https://github.com/HugoBlox/hugo-blox-builder/blob/main/CONTRIBUTING.md) or [suggest improvements](https://github.com/HugoBlox/hugo-blox-builder/issues)
-- ⬆️ **Updating?** View the [Update Guide](https://docs.hugoblox.com/hugo-tutorials/update/) and [Release Notes](https://github.com/HugoBlox/hugo-blox-builder/releases)
-
-## We ask you, humbly, to support this open source movement
-
-Today we ask you to defend the open source independence of the Wowchemy website builder and themes 🐧
-
-We're an open source movement that depends on your support to stay online and thriving, but 99.9% of our creators don't give; they simply look the other way.
-
-### [❤️ Click here to become a GitHub Sponsor, unlocking awesome perks such as _exclusive academic templates and widgets_](https://github.com/sponsors/gcushen)
-
-## Demo credits
-
-Please replace the demo images with your own.
-
-- [Female scientist](https://unsplash.com/photos/uVnRa6mOLOM)
-- [2 Coders](https://unsplash.com/photos/kwzWjTnDPLk)
-- [Cafe](https://unsplash.com/photos/RnDGGnMEOao)
-- Blog posts
-  - https://unsplash.com/photos/AndE50aaHn4
-  - https://unsplash.com/photos/OYzbqk2y26c
-- Avatars
-  - https://unsplash.com/photos/5yENNRbbat4
-  - https://unsplash.com/photos/WNoLnJo7tS8
+## Formatting/Content Tips
+There have been cases where people have used webscraping bots to pull phone numbers from our CVs posted on this website - it's recommended to omit that information from the PDF that you upload here.
