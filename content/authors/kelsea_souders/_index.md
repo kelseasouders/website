@@ -54,10 +54,11 @@ social:
 #  link: https://scholar.google.com/citations?authuser=1&user=Owl_WsQAAAAJ
 
 # Link to a PDF of your resume/CV from the About widget.
-# To enable, copy your resume/CV to `website/content/authors_cvs` and uncomment the lines below.  
+# To enable, copy your resume/CV to the same folder as this one and uncomment the lines below.
+# Make sure to change the name of the folder!  
 - icon: cv
   icon_pack: ai
-  link: ../authors_cvs/kelsea_souders_cv.pdf
+  link: author/kelsea-souders/cv.pdf
 
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.  

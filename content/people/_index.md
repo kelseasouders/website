@@ -12,6 +12,7 @@ sections:
       user_groups:
         - Principal Investigator
     design:
+      show_interests: false
       spacing:
         padding: ["25px", "100px", "25px", "100px"]
 
@@ -22,6 +23,7 @@ sections:
       user_groups:
         - Researchers
     design:
+      show_interests: false
       spacing:
         padding: ["25px", "100px", "25px", "100px"]
 
@@ -32,6 +34,7 @@ sections:
       user_groups:
         - Alumni
     design:
+      show_interests: false
       spacing:
         padding: ["25px", "100px", "25px", "100px"]
 
@@ -42,6 +45,7 @@ sections:
       user_groups:
         - Collaborators
     design:
+      show_interests: false
       spacing:
         padding: ["25px", "100px", "25px", "100px"]
 
